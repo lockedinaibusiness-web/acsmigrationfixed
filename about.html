@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — ACS</title>
+    <meta name="description" content="ACS is a new admissions consultancy built on zero university commission, radical transparency and direct access to your counsellor." />
+  <link rel="canonical" href="https://admissionsandcareerservices.com/pages/about" />
+  <link rel="alternate" hreflang="en-in" href="https://admissionsandcareerservices.com/pages/about" />
+  <link rel="alternate" hreflang="x-default" href="https://admissionsandcareerservices.com/pages/about" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ACS — Admissions & Career Services" />
+  <meta property="og:title" content="About Us — ACS" />
+  <meta property="og:description" content="ACS is a new admissions consultancy built on zero university commission, radical transparency and direct access to your counsellor." />
+  <meta property="og:url" content="https://admissionsandcareerservices.com/pages/about" />
+  <meta property="og:image" content="https://admissionsandcareerservices.com/images/abouthero.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.49.0/dist/tabler-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <style>
+    /* ── ABOUT HERO (image bleed + floating stat bar) ── */
+    .about-hero-wrap {
+      max-width: 1100px; margin: 32px auto 0; padding: 0 24px;
+    }
+    .about-hero {
+      position: relative;
+      background: linear-gradient(90deg, #FDF9EF 0%, #FDF9EF 42%, rgba(253,249,239,0) 68%),
+                  url('../images/abouthero.webp') right center / cover no-repeat;
+      border-radius: 22px;
+      min-height: 340px;
+      padding: 44px 40px;
+      display: flex; align-items: center;
+      overflow: hidden;
+    }
+    .about-hero-content { max-width: 460px; position: relative; z-index: 2; }
+    .about-hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #fff; color: #6B5B3E; font-size: 11px; font-weight: 600;
+      padding: 6px 14px; border-radius: 20px; margin-bottom: 18px;
+      border: 1px solid #EDDFBC;
+    }
+    .about-hero-badge i { color: #C8952E; }
+    .about-hero h1 {
+      font-family: var(--font-serif, serif);
+      font-weight: 700; font-size: 40px; line-height: 1.15;
+      color: #1E2333; margin: 0 0 14px;
+    }
+    .about-hero h1 span { color: #C8952E; }
+    .about-hero p {
+      font-size: 14px; line-height: 1.7; color: #5A5548; margin: 0 0 24px; max-width: 400px;
+    }
+
+    /* Floating stat bar */
+    .about-stats-float {
+      max-width: 1100px; margin: -46px auto 0; padding: 0 24px;
+      position: relative; z-index: 3;
+    }
+    .about-stats-inner {
+      background: #FBF3DE; border: 1px solid #EDDFBC; border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(46,33,16,0.09);
+      padding: 22px 30px;
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+    }
+    .astat { display: flex; align-items: center; gap: 12px; }
+    .astat-ic {
+      width: 46px; height: 46px; border-radius: 50%; background: #fff;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 18px; color: #C8952E;
+      box-shadow: 0 3px 8px rgba(46,33,16,0.08);
+    }
+    .astat-n { font-family: var(--font-serif, serif); font-size: 19px; font-weight: 700; color: #C8952E; line-height: 1.2; }
+    .astat-l { font-size: 11.5px; color: #6B5B3E; line-height: 1.35; margin-top: 1px; }
+
+    @media (max-width: 900px) {
+      .about-hero { background: linear-gradient(180deg, #FDF9EF 55%, rgba(253,249,239,0) 100%), url('../images/abouthero.webp') center 20% / cover no-repeat; min-height: 420px; align-items: flex-end; }
+      .about-hero-content { max-width: 100%; }
+      .about-stats-inner { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ── PREVENT FULL-BLEED STRETCH ON WIDE SCREENS ── */
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="acs-nav"></div>
+
+  <div class="about-hero-wrap">
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <div class="about-hero-badge"><i class="ti ti-info-circle"></i> Our Story</div>
+        <h1>About <span>ACS</span></h1>
+        <p>ACS was founded on one simple belief: every student deserves honest guidance — not advice driven by commission or kickbacks from universities.</p>
+        <p style="font-size:12.5px;color:#7A6E58;">We're a new consultancy. That means no track record to lean on yet — so everything below is what we do, not what we claim to have done.</p>
+        <a class="btn-p" href="contact.html">Talk to us</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- FLOATING STAT BAR -->
+  <div class="about-stats-float">
+    <div class="about-stats-inner">
+      <div class="astat">
+        <div class="astat-ic"><i class="ti ti-heart-handshake"></i></div>
+        <div><div class="astat-n">0%</div><div class="astat-l">Commission from universities</div></div>
+      </div>
+      <div class="astat">
+        <div class="astat-ic"><i class="ti ti-user"></i></div>
+        <div><div class="astat-n">1:1</div><div class="astat-l">Personal counsellor attention</div></div>
+      </div>
+      <div class="astat">
+        <div class="astat-ic"><i class="ti ti-shield-check"></i></div>
+        <div><div class="astat-n">100%</div><div class="astat-l">Transparent process</div></div>
+      </div>
+      <div class="astat">
+        <div class="astat-ic"><i class="ti ti-gift"></i></div>
+        <div><div class="astat-n">Free</div><div class="astat-l">First consultation</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION -->
+  <section class="section">
+    <div class="section-inner">
+    <div class="sec-tag">Our mission</div>
+    <div class="sec-h">Honest guidance. Real outcomes.</div>
+    <div class="sec-sub">The admissions consulting industry has a commission problem. Universities pay agents to send students — creating a conflict of interest where your best outcome isn't always the priority. ACS was built from day one to change that.</div>
+    <div class="cards3">
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-heart"></i></div>
+        <h3>No Commission. Ever.</h3>
+        <p>We don't accept referral fees or commissions from any university, anywhere. Our only incentive is your success — not a payout tied to where you enrol.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-eye"></i></div>
+        <h3>Radical Transparency</h3>
+        <p>We tell you the truth about your profile — including honest assessments of your chances and realistic alternatives, even when it's not what you want to hear.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-user-heart"></i></div>
+        <h3>Student-First, From Day One</h3>
+        <p>Because we're a young, focused team, every student gets direct access to senior counsellors — not a call centre. You're not a ticket number to us.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- WHY A NEW CONSULTANCY -->
+  <section class="section alt">
+    <div class="section-inner">
+    <div class="sec-tag">Why ACS</div>
+    <div class="sec-h">A fresh alternative to a broken industry</div>
+    <div class="sec-sub">We're a new consultancy — and we think that's an advantage, not a drawback. Here's why.</div>
+    <div class="cards3">
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-users"></i></div>
+        <h3>Small by design</h3>
+        <p>We're intentionally taking on a limited number of students at a time, so every application gets real attention instead of being rushed through a pipeline.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-refresh"></i></div>
+        <h3>Current, not outdated advice</h3>
+        <p>Visa rules, intake requirements and scholarship criteria change every year. Being new means our processes are built around today's rules, not habits from a decade ago.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-message-2"></i></div>
+        <h3>Direct access to founders</h3>
+        <p>In our early days, you work directly with the people who built ACS — not a junior associate several layers removed from decision-making.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- HOW WE'RE BUILT -->
+  <section class="section">
+    <div class="section-inner">
+    <div class="sec-tag">How we're built</div>
+    <div class="sec-h">A small team, deliberately</div>
+    <div class="sec-sub">We're a new consultancy, so instead of bios we'll show you exactly how the work gets done.</div>
+    <div class="cards3">
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-user-circle"></i></div>
+        <h3>You meet the person who does the work</h3>
+        <p>The counsellor on your first call is the counsellor who reviews your SOP and prepares you for your interview. No handoff to a junior, no call centre.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-checklist"></i></div>
+        <h3>Process over promises</h3>
+        <p>You'll get a written plan with dates, owners and next steps at the end of your consultation — so you can judge us on whether we deliver it.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-cash-off"></i></div>
+        <h3>No incentive to steer you</h3>
+        <p>We take no referral fees from any university. We'd rather earn the next referral from you than the current one from a university.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- WHAT TO EXPECT -->
+  <section class="section alt">
+    <div class="section-inner">
+    <div class="sec-tag">What to expect</div>
+    <div class="sec-h">What working with us actually looks like</div>
+    <div class="sec-sub">We're a new consultancy, so here's exactly how we work with every student — our actual process, not a highlight reel.</div>
+    <div class="cards3">
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-phone"></i></div>
+        <h3>A real conversation first</h3>
+        <p>Your first call is with a senior counsellor, not a sales script. We assess your profile honestly before recommending anything.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-file-text"></i></div>
+        <h3>Hands-on document support</h3>
+        <p>SOPs, LORs and applications are reviewed personally by your counsellor through multiple drafts — not outsourced or templated.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-headset"></i></div>
+        <h3>You can always reach us</h3>
+        <p>Direct WhatsApp and email access to your counsellor throughout your application and visa process — no ticketing queues.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <h2>Be one of our first success stories</h2>
+    <p>Talk to a counsellor who has your best interests at heart — no commission, no pressure.</p>
+    <div class="cta-btns">
+      <a class="btn-w" href="contact.html">Book Free Consultation</a>
+      <a class="btn-wa" href="https://wa.me/919811448228"><i class="ti ti-brand-whatsapp" style="font-size:15px"></i> WhatsApp us</a>
+    </div>
+  </div>
+
+  <div id="acs-footer"></div>
+  <script src="../js/components.js"></script>
+  <script src="../js/nav.js"></script>
+</body>
+</html>

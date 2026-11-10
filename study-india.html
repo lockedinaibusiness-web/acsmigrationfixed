@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study in India — ACS</title>
+    <meta name="description" content="Study in India: JEE, NEET, CUET and CAT guidance plus NRI and foreign-national quota support and hostel/ enrolment help." />
+  <link rel="canonical" href="https://admissionsandcareerservices.com/pages/study-india" />
+  <link rel="alternate" hreflang="en-in" href="https://admissionsandcareerservices.com/pages/study-india" />
+  <link rel="alternate" hreflang="x-default" href="https://admissionsandcareerservices.com/pages/study-india" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ACS — Admissions & Career Services" />
+  <meta property="og:title" content="Study in India — ACS" />
+  <meta property="og:description" content="Study in India: JEE, NEET, CUET and CAT guidance plus NRI and foreign-national quota support and hostel/ enrolment help." />
+  <meta property="og:url" content="https://admissionsandcareerservices.com/pages/study-india" />
+  <meta property="og:image" content="https://admissionsandcareerservices.com/images/abouthero.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.49.0/dist/tabler-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <style>
+    /* ── PREVENT FULL-BLEED STRETCH ON WIDE SCREENS ── */
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+      box-sizing: border-box;
+    }
+
+    /* ── TRUST BAR (gold/cream, sits under page-hero) ── */
+    .trust-bar {
+      background: #FBF3DE;
+      border-top: 1px solid #EDDFBC;
+      border-bottom: 1px solid #EDDFBC;
+      padding: 18px 24px;
+    }
+    .trust-bar-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; gap: 36px; justify-content: center; flex-wrap: wrap; align-items: center;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 12.5px; color: #6B5B3E; font-weight: 600;
+    }
+    .trust-item i { font-size: 16px; color: #C8952E; }
+
+    /* ── EXAM GRID (gold accent bar + icon) ── */
+    .exam-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;
+    }
+    .exam-card {
+      background: #fff; border: 1px solid var(--color-border, #EAEAEA);
+      border-radius: 14px; padding: 26px 18px; text-align: center;
+      box-shadow: 0 4px 14px rgba(20,20,20,0.04);
+      position: relative; overflow: hidden;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .exam-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, #C8952E, #E3A63C);
+    }
+    .exam-card:hover { transform: translateY(-4px); box-shadow: 0 10px 26px rgba(20,20,20,0.08); }
+    .exam-icon {
+      width: 44px; height: 44px; margin: 0 auto 14px;
+      background: #FBF3DE; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; color: #C8952E;
+    }
+    .exam-name { font-size: 14.5px; font-weight: 700; color: var(--color-text-primary); margin-bottom: 6px; }
+    .exam-for {
+      display: inline-block; font-size: 10.5px; color: #C8952E; font-weight: 700;
+      background: #FBF3DE; padding: 3px 10px; border-radius: 100px; margin-bottom: 10px;
+    }
+    .exam-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.55; }
+
+    @media (max-width: 900px) { .exam-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 500px) { .exam-grid { grid-template-columns: 1fr; } }
+
+    /* ── CITY GRID ── */
+    .city-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+    }
+    .city-card {
+      background: #fff; border: 1px solid var(--color-border, #EAEAEA);
+      border-radius: 12px; padding: 18px; text-decoration: none;
+      display: block; transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+    .city-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(20,20,20,0.08); border-color: #E3A63C; }
+    .city-dot { width: 7px; height: 7px; border-radius: 50%; background: #C8952E; margin-bottom: 10px; }
+    .city-card .city-name { font-size: 13.5px; font-weight: 700; color: var(--color-text-primary); margin-bottom: 3px; }
+    .city-card .city-tag { font-size: 11px; color: var(--color-text-secondary); }
+
+    @media (max-width: 900px) { .city-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 460px) { .city-grid { grid-template-columns: 1fr; } }
+
+    /* ── WHO WE HELP — WARM TINTED CARDS ── */
+    .who-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+    }
+    .who-card {
+      border-radius: 16px; padding: 28px 24px;
+      border: 1px solid transparent;
+      box-shadow: 0 4px 14px rgba(20,20,20,0.04);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .who-card:hover { transform: translateY(-4px); box-shadow: 0 10px 26px rgba(20,20,20,0.08); }
+    .who-card.tint-1 { background: #FBF3DE; border-color: #EDDFBC; }
+    .who-card.tint-2 { background: #FDF3E7; border-color: #F3DDB8; }
+    .who-card.tint-3 { background: #FFFDF8; border-color: #EDDFBC; }
+    .who-ic {
+      width: 48px; height: 48px; border-radius: 12px; background: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 21px; color: #C8952E; margin-bottom: 16px;
+      box-shadow: 0 3px 8px rgba(46,33,16,0.06);
+    }
+    .who-card h3 { font-size: 15px; font-weight: 700; color: var(--color-text-primary); margin-bottom: 8px; }
+    .who-card p { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+
+    @media (max-width: 900px) { .who-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <div id="acs-nav"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-badge"><i class="ti ti-map-pin" style="font-size:11px"></i> Admissions Within India</div>
+    <h1>Study in <span>India</span></h1>
+    <p>Affordable, globally recognized degrees at some of Asia's top-ranked universities — with honest, commission-free guidance from shortlisting to enrolment.</p>
+    <div class="page-hero-btns">
+      <a class="btn-p" href="contact.html">Book Free Consultation</a>
+      <a class="btn-o" href="#exams">Entrance Exams</a>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item"><i class="ti ti-shield-check"></i> 100% Commission-Free</div>
+      <div class="trust-item"><i class="ti ti-building-bank"></i> Guidance for India, Nepal &amp; Bhutan students</div>
+      <div class="trust-item"><i class="ti ti-school"></i> IIT / AIIMS / IIM Application Support</div>
+      <div class="trust-item"><i class="ti ti-clock"></i> Free 30-Min Consultation</div>
+    </div>
+  </div>
+
+  <!-- WHY STUDY IN INDIA -->
+  <section class="section">
+    <div class="section-inner">
+    <div class="sec-tag">Why India</div>
+    <div class="sec-h">A rising global education hub</div>
+    <div class="sec-sub">India is home to IITs, IIMs, AIIMS, and hundreds of NAAC/NBA-accredited universities — offering degrees respected across the world, at a fraction of the cost of studying abroad.</div>
+    <div class="cards3">
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-currency-rupee"></i></div>
+        <h3>Affordable, Quality Education</h3>
+        <p>Tuition and living costs are significantly lower than the US, UK, or Australia — without compromising on faculty quality or infrastructure.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-certificate"></i></div>
+        <h3>Globally Recognized Degrees</h3>
+        <p>Degrees from UGC-recognized universities are accepted for higher studies and employment across most countries, including for further study abroad.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-language"></i></div>
+        <h3>English-Medium Instruction</h3>
+        <p>Most professional courses — engineering, medicine, management — are taught entirely in English, easing the transition for international students.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-building-hospital"></i></div>
+        <h3>Strong Medical &amp; Engineering Base</h3>
+        <p>India trains more doctors and engineers annually than most countries, backed by institutions like AIIMS, IITs, and NITs.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-passport"></i></div>
+        <h3>Simple Visa Process for Neighbours</h3>
+        <p>Students from Nepal and Bhutan can study in India with minimal visa formalities, while other international students use the Student Visa route.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-users-group"></i></div>
+        <h3>Culturally Familiar</h3>
+        <p>Shared culture, cuisine, and — in many cases — language make the transition easier for students from South Asia compared to studying in the West.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ENTRANCE EXAMS -->
+  <section class="section alt" id="exams">
+    <div class="section-inner">
+    <div class="sec-tag">Entrance Exams</div>
+    <div class="sec-h">Know which exam applies to you</div>
+    <div class="sec-sub">Most competitive courses in India require a national entrance exam. We help you identify the right one and prepare a realistic timeline.</div>
+    <div class="exam-grid">
+      <div class="exam-card">
+        <div class="exam-icon"><i class="ti ti-math-function"></i></div>
+        <div class="exam-name">JEE Main / Advanced</div>
+        <div class="exam-for">Engineering</div>
+        <div class="exam-desc">For admission to IITs, NITs, and top engineering colleges across India.</div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-icon"><i class="ti ti-stethoscope"></i></div>
+        <div class="exam-name">NEET</div>
+        <div class="exam-for">Medicine (MBBS/BDS)</div>
+        <div class="exam-desc">Mandatory national exam for all medical and dental college admissions.</div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-icon"><i class="ti ti-school"></i></div>
+        <div class="exam-name">CUET</div>
+        <div class="exam-for">Central Universities</div>
+        <div class="exam-desc">Common entrance test for undergraduate admission to central universities like DU and JNU.</div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-icon"><i class="ti ti-briefcase"></i></div>
+        <div class="exam-name">CAT / MAT</div>
+        <div class="exam-for">MBA / Management</div>
+        <div class="exam-desc">Required for IIMs and most top business schools across India.</div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- POPULAR STUDY CITIES -->
+  <section class="section">
+    <div class="section-inner">
+    <div class="sec-tag">Where to Study</div>
+    <div class="sec-h">Popular study destinations in India</div>
+    <div class="sec-sub">Each city offers a different mix of institutions, industries, and student life.</div>
+    <div class="city-grid">
+      <div class="city-card"><div class="city-dot"></div><div class="city-name">Delhi NCR</div><div class="city-tag">DU, JNU, IIT Delhi</div></div>
+      <div class="city-card"><div class="city-dot"></div><div class="city-name">Bangalore</div><div class="city-tag">IISc, tech &amp; startup hub</div></div>
+      <div class="city-card"><div class="city-dot"></div><div class="city-name">Mumbai</div><div class="city-tag">IIT Bombay, finance capital</div></div>
+      <div class="city-card"><div class="city-dot"></div><div class="city-name">Pune</div><div class="city-tag">Student-friendly, affordable</div></div>
+      <div class="city-card"><div class="city-dot"></div><div class="city-name">Chennai</div><div class="city-tag">IIT Madras, strong in tech</div></div>
+      <div class="city-card"><div class="city-dot"></div><div class="city-name">Hyderabad</div><div class="city-tag">IIIT-H, ISB, growing IT hub</div></div>
+      <div class="city-card"><div class="city-dot"></div><div class="city-name">Kolkata</div><div class="city-tag">IIM Calcutta, rich academics</div></div>
+      <div class="city-card"><div class="city-dot"></div><div class="city-name">Manipal</div><div class="city-tag">MAHE, popular with international students</div></div>
+    </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section alt">
+    <div class="section-inner">
+    <div class="sec-tag">The Process</div>
+    <div class="sec-h">How we help you get admitted</div>
+    <div class="sec-sub">From choosing a course to settling into campus life — we're with you at every step.</div>
+    <div class="steps">
+      <div class="step"><div class="step-n">1</div><h4>Profile &amp; Goal Mapping</h4><p>We assess your academics, budget, and career goals to shortlist the right course and cities.</p></div>
+      <div class="step"><div class="step-n">2</div><h4>Exam &amp; Application Strategy</h4><p>Guidance on which entrance exams to target and a realistic prep and application timeline.</p></div>
+      <div class="step"><div class="step-n">3</div><h4>Documentation Support</h4><p>Help with transcripts, equivalence certificates, and university-specific application forms.</p></div>
+      <div class="step"><div class="step-n">4</div><h4>Enrolment &amp; Settling In</h4><p>Support with hostel/accommodation, orientation, and first-semester logistics.</p></div>
+    </div>
+    </div>
+  </section>
+
+  <!-- WHO WE HELP -->
+  <section class="section">
+    <div class="section-inner">
+    <div class="sec-tag">Who This Is For</div>
+    <div class="sec-h">Guidance tailored to where you're coming from</div>
+    <div class="sec-sub">We understand that every student's situation is different — our guidance reflects that.</div>
+    <div class="who-grid">
+      <div class="who-card tint-1">
+        <div class="who-ic"><i class="ti ti-flag"></i></div>
+        <h3>Students from Nepal &amp; Bhutan</h3>
+        <p>Simplified admission pathways, hostel arrangements, and support navigating Indian university systems for neighbouring-country students.</p>
+      </div>
+      <div class="who-card tint-2">
+        <div class="who-ic"><i class="ti ti-school"></i></div>
+        <h3>Indian Students, Any State</h3>
+        <p>Cross-state admissions guidance — understanding quotas, reservations, and local requirements when applying outside your home state.</p>
+      </div>
+      <div class="who-card tint-3">
+        <div class="who-ic"><i class="ti ti-world"></i></div>
+        <h3>NRI &amp; International Students</h3>
+        <p>Guidance on the NRI/foreign national admission quota available at most Indian universities, plus visa and documentation support.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <h2>Not sure where to start?</h2>
+    <p>Book a free 30-minute consultation — we'll help you map out the right course, exam, and college for your goals.</p>
+    <div class="cta-btns">
+      <a class="btn-w" href="contact.html">Book Free Consultation</a>
+      <a class="btn-wa" href="https://wa.me/919811448228"><i class="ti ti-brand-whatsapp" style="font-size:15px"></i> WhatsApp us</a>
+    </div>
+  </div>
+
+  <div id="acs-footer"></div>
+  <script src="../js/components.js"></script>
+  <script src="../js/nav.js"></script>
+</body>
+</html>

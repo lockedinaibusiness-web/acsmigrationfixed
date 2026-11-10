@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACS — Admissions & Career Services</title>
+    <meta name="description" content="Honest, commission-free admissions counselling, career guidance, test prep and visa support for students in India, Nepal and Sri Lanka." />
+  <link rel="canonical" href="https://admissionsandcareerservices.com/" />
+  <link rel="alternate" hreflang="en-in" href="https://admissionsandcareerservices.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://admissionsandcareerservices.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ACS — Admissions & Career Services" />
+  <meta property="og:title" content="ACS — Admissions & Career Services" />
+  <meta property="og:description" content="Honest, commission-free admissions counselling, career guidance, test prep and visa support for students in India, Nepal and Sri Lanka." />
+  <meta property="og:url" content="https://admissionsandcareerservices.com/" />
+  <meta property="og:image" content="https://admissionsandcareerservices.com/images/abouthero.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/webp" href="images/logoglobe.webp" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.49.0/dist/tabler-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* ── HERO ONLY STYLES — warm gold/cream, world-map + waves ── */
+
+    .hero {
+      position: relative;
+      background: url('images/bg2.webp') center 30% / cover no-repeat;
+      overflow: hidden;
+      padding: 56px 40px 0;
+      text-align: center;
+    }
+
+    /* .hero-map removed — using real background photo instead */
+
+    .hero-inner { position: relative; z-index: 2; padding-top: 24px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #4A3011; color: #F3D993;
+      font-size: 10.5px; font-weight: 600;
+      padding: 6px 16px; border-radius: 20px; margin-bottom: 22px;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-inner h1 {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 1.22;
+      color: #221708;
+      max-width: 640px;
+      margin: 0 auto 6px;
+    }
+    .hero-inner h1 .gold { color: #C8952E; display: block; }
+    .hero-inner h1 .sub  { display: block; font-size: 30px; font-weight: 500; color: #4A3E2C; margin-top: 4px; }
+
+    .hero-divider {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      margin: 18px auto 20px;
+    }
+    .hero-divider span { width: 34px; height: 1px; background: #D9A94A; opacity: 0.6; }
+    .hero-divider i { color: #C8952E; font-size: 14px; }
+
+    .hero-inner p.sub-text {
+      font-size: 14px; color: #6B5B3E; max-width: 480px;
+      margin: 0 auto 30px; line-height: 1.75;
+    }
+
+    .hero-trust {
+      display: flex; align-items: center; justify-content: center;
+      gap: 22px; margin-top: 26px; flex-wrap: wrap;
+    }
+    .hero-trust span { display: flex; align-items: center; gap: 5px; font-size: 12px; color: #6B5B3E; }
+    .hero-trust i { color: #C8952E; font-size: 14px; }
+    .hero-trust .sep { color: #D9A94A; opacity: 0.5; }
+
+    /* country flags row */
+    .hero-flags {
+      display: flex; align-items: center; justify-content: center;
+      gap: 26px; flex-wrap: wrap; padding: 22px 0 44px;
+    }
+    .flag-item {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 12.5px; font-weight: 500; color: #4A3E2C;
+      cursor: pointer; transition: color 0.2s; text-decoration: none;
+    }
+    .flag-item:hover { color: #221708; }
+    .flag-img {
+      width: 30px; height: 30px; border-radius: 50%; object-fit: cover;
+      border: 2px solid #F3D993; display: inline-block;
+    }
+    .flag-sep { color: #D9A94A; font-size: 20px; font-weight: 300; }
+
+    /* feature cards row */
+    .feature-strip { position: relative; z-index: 2; background: transparent; padding: 0 40px 56px; }
+    .feature-strip-inner {
+      max-width: 1040px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4,1fr); gap: 16px;
+    }
+    .fpill {
+      display: flex; align-items: center; gap: 14px; padding: 20px 18px;
+      background: #FFFDF8; border: 0.5px solid #EDDFBC;
+      border-radius: 14px; box-shadow: 0 4px 18px rgba(46,33,16,0.06);
+      text-align: left;
+    }
+    .fpill-ic {
+      width: 46px; height: 46px; background: #E3A63C; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 20px; color: #fff;
+    }
+    .fpill-text strong { display: block; font-size: 13.5px; font-weight: 700; color: #241B0E; line-height: 1.35; margin-bottom: 3px; }
+    .fpill-text span { display: block; font-size: 11.5px; color: #7A6C54; line-height: 1.4; }
+
+    @media(max-width:768px){
+      .hero { padding: 40px 20px 0; }
+      .hero { background: url('images/mobbg.webp') center 30% / cover no-repeat; }
+      .hero-inner h1 { font-size: 30px; }
+      .hero-inner h1 .sub { font-size: 22px; }
+      .feature-strip { padding: 0 20px 40px; }
+      .feature-strip-inner { grid-template-columns: repeat(2,1fr); }
+      .hero-flags { gap: 16px; }
+      .hero-trust { gap: 12px; }
+    }
+    @media(max-width:480px){
+      .feature-strip-inner { grid-template-columns: 1fr; }
+      .hero-inner h1 { font-size: 25px; }
+      .hero-inner h1 .sub { font-size: 19px; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://admissionsandcareerservices.com/#organization",
+      "name": "ACS — Admissions & Career Services",
+      "alternateName": "Admissions and Career Services",
+      "url": "https://admissionsandcareerservices.com/",
+      "description": "Commission-free admissions counselling, career guidance, test preparation and visa support for students from India, Nepal and Sri Lanka.",
+      "areaServed": [
+        "IN",
+        "NP",
+        "LK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-98114-48228",
+        "contactType": "customer service",
+        "availableLanguage": [
+          "en",
+          "hi"
+        ],
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://admissionsandcareerservices.com/#website",
+      "url": "https://admissionsandcareerservices.com/",
+      "name": "ACS — Admissions & Career Services",
+      "publisher": {
+        "@id": "https://admissionsandcareerservices.com/#organization"
+      },
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://admissionsandcareerservices.com/pages/blog.html?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+
+  <!-- NAV injected by components.js -->
+  <div id="acs-nav"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-inner">
+
+      <div class="hero-badge">
+        <i class="ti ti-star" style="font-size:11px"></i> No commission from universities — ever
+      </div>
+
+      <h1>
+        Your Dream University.
+        <span class="gold">Your Global Career.</span>
+        <span class="sub">We Get You There.</span>
+      </h1>
+
+      <div class="hero-divider"><span></span><i class="ti ti-crown"></i><span></span></div>
+
+      <p class="sub-text">
+        Unbiased admissions counselling, career guidance & test prep — from India to the world's top universities.
+      </p>
+
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:2;">
+        <a class="btn-p" href="pages/contact.html">Book Free Consultation <i class="ti ti-arrow-right" style="font-size:12px;margin-left:2px;"></i></a>
+        <a class="btn-o" style="color:#4A3E2C;border-color:#D9A94A;" href="pages/admissions-consulting.html"><i class="ti ti-apps" style="font-size:13px;margin-right:4px;"></i> Explore Services</a>
+      </div>
+
+      <div class="hero-trust">
+        <span><i class="ti ti-shield-check"></i> No commission charged</span>
+        <span class="sep">|</span>
+        <span><i class="ti ti-award"></i> Honest, unbiased advice</span>
+        <span class="sep">|</span>
+        <span><i class="ti ti-user"></i> Direct access to your counsellor</span>
+      </div>
+
+      <div class="hero-flags">
+        <a class="flag-item" href="pages/study-uk.html">
+          <img src="https://flagcdn.com/w40/gb.png" class="flag-img" loading="lazy" decoding="async" width="40" height="27" alt="UK"> Study in UK
+        </a>
+        <span class="flag-sep">|</span>
+        <a class="flag-item" href="pages/study-usa.html">
+          <img src="https://flagcdn.com/w40/us.png" class="flag-img" loading="lazy" decoding="async" width="40" height="27" alt="USA"> Study in USA
+        </a>
+        <span class="flag-sep">|</span>
+        <a class="flag-item" href="pages/study-canada.html">
+          <img src="https://flagcdn.com/w40/ca.png" class="flag-img" loading="lazy" decoding="async" width="40" height="27" alt="Canada"> Study in Canada
+        </a>
+      </div>
+
+    </div>
+
+    <!-- feature cards -->
+    <div class="feature-strip">
+      <div class="feature-strip-inner">
+        <div class="fpill">
+          <div class="fpill-ic"><i class="ti ti-users"></i></div>
+          <div class="fpill-text"><strong>Personalized Guidance</strong><span>Tailored support for your unique goals.</span></div>
+        </div>
+        <div class="fpill">
+          <div class="fpill-ic"><i class="ti ti-file-check"></i></div>
+          <div class="fpill-text"><strong>End-to-End Application Support</strong><span>From shortlisting to final admission.</span></div>
+        </div>
+        <div class="fpill">
+          <div class="fpill-ic"><i class="ti ti-id-badge"></i></div>
+          <div class="fpill-text"><strong>Visa Assistance</strong><span>Expert guidance for a smooth visa process.</span></div>
+        </div>
+        <div class="fpill">
+          <div class="fpill-ic"><i class="ti ti-briefcase"></i></div>
+          <div class="fpill-text"><strong>Career Counselling</strong><span>Discover the right path for your future.</span></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- STATS — unchanged -->
+  <div class="stats">
+    <div class="stat"><div class="stat-n">0%</div><div class="stat-l">Commission from universities</div></div>
+    <div class="stat"><div class="stat-n">6</div><div class="stat-l">Study destinations covered</div></div>
+    <div class="stat"><div class="stat-n">2</div><div class="stat-l">Office regions — India &amp; Nepal</div></div>
+    <div class="stat"><div class="stat-n">30</div><div class="stat-l">Minute first consultation — free</div></div>
+  </div>
+
+  <!-- SERVICES — unchanged -->
+  <section class="section">
+    <div class="sec-tag">What we offer</div>
+    <div class="sec-h">Services built around your goals</div>
+    <div class="sec-sub">From university shortlisting to landing your first job abroad — we cover every step.</div>
+    <div class="cards3">
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-school"></i></div>
+        <h3>Admissions Consulting</h3>
+        <p>SOP writing, university shortlisting, application review & interview prep for top global universities.</p>
+        <a class="card-link" href="pages/admissions-consulting.html">Learn more <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-briefcase"></i></div>
+        <h3>Career Development</h3>
+        <p>Resume building, LinkedIn optimization, mock interviews & job search strategy for global markets.</p>
+        <a class="card-link" href="pages/career-counselling.html">Learn more <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-pencil"></i></div>
+        <h3>Test Preparation</h3>
+        <p>IELTS, TOEFL, GRE & GMAT coaching with personalized study plans and full mock tests.</p>
+        <a class="card-link" href="pages/ielts-toefl.html">Learn more <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-id-badge"></i></div>
+        <h3>Visa Services</h3>
+        <p>End-to-end visa guidance with documentation support and interview preparation for all major destinations.</p>
+        <a class="card-link" href="pages/visa-services.html">Learn more <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-award"></i></div>
+        <h3>Scholarships</h3>
+        <p>Identify, apply for, and secure scholarships and funding opportunities at universities worldwide.</p>
+        <a class="card-link" href="pages/scholarships.html">Learn more <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+      </div>
+      <div class="card">
+        <div class="card-ic"><i class="ti ti-device-desktop"></i></div>
+        <h3>EduCat Platform</h3>
+        <p>Our online learning portal with live classes, recorded courses, and mentorship programs.</p>
+        <a class="card-link" href="pages/educat-platform.html">Learn more <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTRIES — unchanged -->
+  <section class="section alt">
+    <div class="sec-tag">Study destinations</div>
+    <div class="sec-h">Where do you want to study?</div>
+    <div class="sec-sub">Deep expertise across the world's top education destinations.</div>
+    <div class="countries">
+      <a class="country" href="pages/study-uk.html"><div class="c-flag">🇬🇧</div><div class="c-name">United Kingdom</div><div class="c-tag">Russell Group · PSW visa</div></a>
+      <a class="country" href="pages/study-canada.html"><div class="c-flag">🇨🇦</div><div class="c-name">Canada</div><div class="c-tag">PR-friendly · Affordable</div></a>
+      <a class="country" href="pages/study-usa.html"><div class="c-flag">🇺🇸</div><div class="c-name">USA</div><div class="c-tag">World-class research</div></a>
+      <a class="country" href="pages/study-australia.html"><div class="c-flag">🇦🇺</div><div class="c-name">Australia</div><div class="c-tag">Work while study</div></a>
+      <a class="country" href="pages/study-germany.html"><div class="c-flag">🇩🇪</div><div class="c-name">Germany</div><div class="c-tag">Low tuition fees</div></a>
+      <a class="country" href="pages/study-japan.html"><div class="c-flag">🇯🇵</div><div class="c-name">Japan</div><div class="c-tag">Scholarships · Tech</div></a>
+      <a class="country" href="pages/study-abroad.html"><div class="c-flag">🇳🇿</div><div class="c-name">New Zealand</div><div class="c-tag">Safe · Work rights</div></a>
+      <a class="country" href="pages/study-uk.html" style="border-style:dashed;display:flex;flex-direction:column;align-items:center;justify-content:center;"><div style="font-size:12px;color:#B9791E;font-weight:600;">+ More countries</div><div class="c-tag" style="margin-top:4px;">View all →</div></a>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS — unchanged -->
+  <section class="section">
+    <div class="sec-tag">The process</div>
+    <div class="sec-h">How it works — 4 simple steps</div>
+    <div class="sec-sub">A clear, guided journey from your first call to your university offer letter.</div>
+    <div class="steps">
+      <div class="step"><div class="step-n">1</div><h4>Free consultation</h4><p>We understand your goals, budget & profile in a 30-min call.</p></div>
+      <div class="step"><div class="step-n">2</div><h4>Personalized roadmap</h4><p>University shortlist & application plan tailored to your profile.</p></div>
+      <div class="step"><div class="step-n">3</div><h4>Application support</h4><p>SOPs, documents, interviews — we guide till submission.</p></div>
+      <div class="step"><div class="step-n">4</div><h4>Offer & beyond</h4><p>Visa, accommodation & career prep as you settle in abroad.</p></div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET (fabricated testimonials removed — ACS is pre-launch) -->
+  <section class="section alt">
+    <div class="sec-tag">What you actually get</div>
+    <div class="sec-h">Our promises, in writing</div>
+    <div class="sec-sub">We're new, so we won't dress it up with reviews we haven't earned yet. Here is what we commit to on every file.</div>
+    <div class="cards2">
+      <div class="tcard">
+        <div class="tcard-ic"><i class="ti ti-cash-off"></i></div>
+        <div class="tcard-q">No commission from any university, ever. Our fee structure is disclosed before you pay anything.</div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-ic"><i class="ti ti-user-circle"></i></div>
+        <div class="tcard-q">The counsellor you meet first is the one who works on your file — through to your visa interview.</div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-ic"><i class="ti ti-message-chatbot"></i></div>
+        <div class="tcard-q">Direct WhatsApp access to your counsellor during working hours. No ticket numbers, no queues.</div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-ic"><i class="ti ti-report-off"></i></div>
+        <div class="tcard-q">If we don't think a university is a realistic fit for your profile, we will tell you — and suggest alternatives.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND — unchanged -->
+  <div class="cta-band">
+    <h2>Start your journey today</h2>
+    <p>Book a free 30-minute consultation — no pressure, no commission, just honest advice.</p>
+    <div class="cta-btns">
+      <a class="btn-w" href="pages/contact.html">Book Free Consultation</a>
+      <a class="btn-wa" href="https://wa.me/919811448228"><i class="ti ti-brand-whatsapp" style="font-size:15px"></i> WhatsApp us</a>
+    </div>
+  </div>
+
+  <!-- FOOTER injected by components.js -->
+  <div id="acs-footer"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

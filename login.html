@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login / Sign Up — ACS</title>
+    <meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.49.0/dist/tabler-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .auth-wrap {
+      min-height: 70vh; display: flex; align-items: center; justify-content: center;
+      padding: 40px 20px;
+    }
+    .auth-card {
+      width: 100%; max-width: 400px; background: var(--color-bg-primary);
+      border: 0.5px solid var(--color-border); border-radius: 16px;
+      padding: 40px 32px; text-align: center;
+    }
+    .auth-card h2 { font-size: 22px; font-weight: 700; color: var(--color-text-primary); margin-bottom: 8px; }
+    .auth-card p { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 28px; line-height: 1.6; }
+    .google-btn {
+      width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 13px; background: #fff; border: 1px solid var(--color-border);
+      border-radius: 8px; font-size: 14px; font-weight: 600; color: #3c4043;
+      cursor: pointer; transition: box-shadow 0.15s, background 0.15s;
+    }
+    .google-btn:hover { box-shadow: 0 1px 6px rgba(0,0,0,0.15); background: #f8f9fa; }
+    .google-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+    .google-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .auth-status {
+      margin-top: 18px; font-size: 12.5px; min-height: 18px;
+    }
+    .auth-status.success { color: #1a8a4a; font-weight: 600; }
+    .auth-status.error { color: #c0392b; font-weight: 600; }
+    .auth-note { font-size: 11px; color: var(--color-text-secondary); margin-top: 22px; }
+  </style>
+</head>
+<body>
+
+  <div id="acs-nav"></div>
+
+  <section class="auth-wrap">
+    <div class="auth-card">
+      <h1>Welcome to ACS</h1>
+      <p>Sign in to book your free consultation and track your journey with us.</p>
+
+      <button class="google-btn" id="googleBtn" onclick="signInWithGoogle()">
+        <svg viewBox="0 0 48 48">
+          <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/>
+          <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/>
+          <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/>
+          <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/>
+        </svg>
+        <span id="googleBtnText">Continue with Google</span>
+      </button>
+
+      <div class="auth-status" id="authStatus"></div>
+
+      <p class="auth-note">🔒 We only use your Google name, email, and photo to personalize your experience. Nothing is shared with third parties.</p>
+    </div>
+  </section>
+
+  <div id="acs-footer"></div>
+  <script src="../js/components.js"></script>
+  <script src="../js/nav.js"></script>
+
+  <!-- Firebase SDKs (compat version — works directly with <script> tags, no build tools needed) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyB05Gb5jtPSc089iDPARZF55oUGt4VxsXI",
+      authDomain: "acs-website-ce721.firebaseapp.com",
+      projectId: "acs-website-ce721",
+      storageBucket: "acs-website-ce721.firebasestorage.app",
+      messagingSenderId: "527482802138",
+      appId: "1:527482802138:web:5af15633e2cd05010c7ae3",
+      measurementId: "G-YDN6EKTPXT",
+      databaseURL: "https://acs-website-ce721-default-rtdb.firebaseio.com"
+    };
+
+    // Paste your deployed Apps Script Web App URL here (same one used for the contact form)
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzEOhTlM2Nc1dCnnxM8iIgmSIWCrQmirCWg_LYX0Ro_7kul8UF0Iwg_0zwYoOjw1gC2/exec';
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.database();
+
+    function signInWithGoogle() {
+      const btn = document.getElementById('googleBtn');
+      const btnText = document.getElementById('googleBtnText');
+      const statusEl = document.getElementById('authStatus');
+
+      btn.disabled = true;
+      btnText.textContent = 'Signing in...';
+      statusEl.textContent = '';
+      statusEl.className = 'auth-status';
+
+      const provider = new firebase.auth.GoogleAuthProvider();
+
+      auth.signInWithPopup(provider)
+        .then((result) => {
+          const user = result.user;
+
+          // Save / update user data in Realtime Database under users/{uid}
+          return db.ref('users/' + user.uid).update({
+            name: user.displayName || '',
+            email: user.email || '',
+            photo: user.photoURL || '',
+            lastLogin: new Date().toISOString()
+          }).then(() => user);
+        })
+        .then((user) => {
+          // Also log this login into the Google Sheet ("Logins" tab)
+          fetch(SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({
+              formType: 'login',
+              name: user.displayName || '',
+              email: user.email || '',
+              photo: user.photoURL || ''
+            })
+          }).catch(() => {}); // don't block login flow if this fails
+
+          return user;
+        })
+        .then((user) => {
+          statusEl.textContent = 'Welcome, ' + (user.displayName || 'there') + '! Login successful.';
+          statusEl.className = 'auth-status success';
+          setTimeout(() => {
+            window.location.href = '../index.html';
+          }, 1500);
+        })
+        .catch((error) => {
+          console.error(error);
+          statusEl.textContent = 'Something went wrong. Please try again.';
+          statusEl.className = 'auth-status error';
+          btn.disabled = false;
+          btnText.textContent = 'Continue with Google';
+        });
+    }
+  </script>
+</body>
+</html>
